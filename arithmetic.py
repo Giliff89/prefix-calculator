@@ -48,9 +48,17 @@ def divide(number_list):
     return new_num
 
 
-def square(num):
-    """Return the square of a number"""
-    return power(num, 2)
+def square(number_list):
+    """Return the square of a series of numbers"""
+    squared = ''
+    for number in number_list:
+        if number == number_list[0]:
+            pass
+        else:
+            new_num = float(number)
+            new_num **= 2
+            squared += '%d ' % new_num
+    return squared
 
 
 def cube(num):
