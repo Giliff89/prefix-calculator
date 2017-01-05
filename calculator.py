@@ -8,13 +8,13 @@ calculator program yourself in this file.
 from arithmetic import *
 
 while True:
-    calculation = raw_input("Enter your calculation: ")
-    value_list = calculation.split(' ')
-    if value_list[0] == "q":
+    num_input = raw_input("Enter your calculation: ")
+    number_list = num_input.split(' ')
+    if number_list[0] == "q":
         break
     else:
-        if value_list[0] == "+":
-            print add(int(value_list[1]), int(value_list[2]))
+        if number_list[0] == "+":
+            print add(number_list)
         elif value_list[0] == "-":
             print subtract(int(value_list[1]), int(value_list[2]))
         elif value_list[0] == "*":

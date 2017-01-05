@@ -1,6 +1,13 @@
-def add(num1, num2):
-    """Return the sum of two numbers"""
-    return num1 + num2
+def add(number_list):
+    """Return the sum of some numbers"""
+    subtotal = 0
+    for number in number_list:
+        if number == number_list[0]:
+            pass
+        else:
+            new_num = int(number)
+            subtotal += new_num
+    return subtotal
 
 
 def subtract(num1, num2):
