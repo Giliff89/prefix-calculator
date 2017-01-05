@@ -58,9 +58,18 @@ def cube(num):
     return power(num, 3)
 
 
-def power(num, exponent):
+def power(number_list):
     """Return num raised to the power of exponent"""
-    return float(num) ** exponent
+    for number in number_list:
+        if number == number_list[0]:
+            pass
+        elif number == number_list[1]:
+            new_num = float(number)
+            print new_num
+        else:
+            new_num **= float(number)
+            print new_num
+    return new_num
 
 
 def mod(num1, num2):
