@@ -1,5 +1,5 @@
 def add(number_list):
-    """Return the sum of some numbers"""
+    """Return the sum of s series of numbers"""
     subtotal = 0
     for number in number_list:
         if number == number_list[0]:
@@ -11,7 +11,7 @@ def add(number_list):
 
 
 def subtract(number_list):
-    """Return the difference of two numbers"""
+    """Return the difference of a series numbers"""
     subtotal = 0
     for number in number_list:
         if number == number_list[0]:
@@ -25,7 +25,7 @@ def subtract(number_list):
 
 
 def multiply(number_list):
-    """Return the product of two numbers"""
+    """Return the product of a series of numbers"""
     for number in number_list:
         if number == number_list[0]:
             pass
@@ -37,7 +37,7 @@ def multiply(number_list):
 
 
 def divide(number_list):
-    """Return the quotient of two numbers as a float"""
+    """Return the quotient of a series of numbers as a float"""
     for number in number_list:
         if number == number_list[0]:
             pass
@@ -75,7 +75,7 @@ def cube(number_list):
 
 
 def power(number_list):
-    """Return num raised to the power of exponent"""
+    """Return numbers raised to the power of exponent"""
     for number in number_list:
         if number == number_list[0]:
             pass
@@ -88,6 +88,6 @@ def power(number_list):
     return new_num
 
 
-def mod(num1, num2):
-    """Return remainder of num1 divided by num2"""
-    return num1 % num2
+def mod(number_list):
+    """Return remainder of number 1 divided by number 2"""
+    return float(number_list[1]) % float(number_list[2])

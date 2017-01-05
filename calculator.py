@@ -25,9 +25,7 @@ while True:
             print square(number_list)
         elif number_list[0] == "cube":
             print cube(number_list)
-
         elif number_list[0] == "power":
             print power(number_list)
-
-        elif value_list[0] == "mod":
-            print mod(int(value_list[1]), int(value_list[2]))
+        elif number_list[0] == "mod":
+            print mod(number_list)
