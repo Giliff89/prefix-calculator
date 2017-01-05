@@ -23,3 +23,11 @@ while True:
             print multiply(int(value_list[1]), int(value_list[2]))
         elif value_list[0] == "/":
             print divide(int(value_list[1]), int(value_list[2]))
+        elif value_list[0] == "square":
+            print square(int(value_list[1]))
+        elif value_list[0] == "cube":
+            print cube(int(value_list[1]))
+        elif value_list[0] == "power":
+            print power(int(value_list[1]), int(value_list[2]))
+        elif value_list[0] == "mod":
+            print mod(int(value_list[1]), int(value_list[2]))
