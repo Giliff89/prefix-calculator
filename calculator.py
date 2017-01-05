@@ -9,9 +9,7 @@ from arithmetic import *
 
 while True:
     calculation = raw_input("Enter your calculation: ")
-#    print calculation
     value_list = calculation.split(' ')
-#    print value_list
     if value_list[0] == "q":
         break
     else:
