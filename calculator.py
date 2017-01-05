@@ -17,10 +17,10 @@ while True:
             print add(number_list)
         elif number_list[0] == "-":
             print subtract(number_list)
-        elif value_list[0] == "*":
-            print multiply(int(value_list[1]), int(value_list[2]))
-        elif value_list[0] == "/":
-            print divide(int(value_list[1]), int(value_list[2]))
+        elif number_list[0] == "*":
+            print multiply(number_list)
+        elif number_list[0] == "/":
+            print divide(number_list)
         elif value_list[0] == "square":
             print square(int(value_list[1]))
         elif value_list[0] == "cube":

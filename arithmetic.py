@@ -24,14 +24,28 @@ def subtract(number_list):
     return subtotal
 
 
-def multiply(num1, num2):
+def multiply(number_list):
     """Return the product of two numbers"""
-    return num1 * num2
+    for number in number_list:
+        if number == number_list[0]:
+            pass
+        elif number == number_list[1]:
+            new_num = float(number)
+        else:
+            new_num *= float(number)
+    return new_num
 
 
-def divide(num1, num2):
+def divide(number_list):
     """Return the quotient of two numbers as a float"""
-    return float(num1) / num2
+    for number in number_list:
+        if number == number_list[0]:
+            pass
+        elif number == number_list[1]:
+            new_num = float(number)
+        else:
+            new_num /= float(number)
+    return new_num
 
 
 def square(num):
