@@ -61,9 +61,17 @@ def square(number_list):
     return squared
 
 
-def cube(num):
-    """Return the cube of a number"""
-    return power(num, 3)
+def cube(number_list):
+    """Return the cube of a series of numbers"""
+    cubed = ''
+    for number in number_list:
+        if number == number_list[0]:
+            pass
+        else:
+            new_num = float(number)
+            new_num **= 3
+            cubed += '%d ' % new_num
+    return cubed
 
 
 def power(number_list):
