@@ -10,9 +10,18 @@ def add(number_list):
     return subtotal
 
 
-def subtract(num1, num2):
+def subtract(number_list):
     """Return the difference of two numbers"""
-    return num1 - num2
+    subtotal = 0
+    for number in number_list:
+        if number == number_list[0]:
+            pass
+        elif number == number_list[1]:
+            subtotal = int(number)
+        else:
+            new_num = int(number)
+            subtotal -= new_num
+    return subtotal
 
 
 def multiply(num1, num2):
